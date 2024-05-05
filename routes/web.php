@@ -36,6 +36,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/cenicienta', function () {return view('pages.cenicienta');   });
     Route::get('/ansiedad', function () {return view('pages.ansiedad');   });
     Route::get('/tristeza', function () {return view('pages.tristeza');   });
+    Route::get('/temor', function () {return view('pages.temor');   });
     
 });
 

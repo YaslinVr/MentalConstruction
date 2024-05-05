@@ -29,7 +29,7 @@
                         <img src="./images/miedo dos.png" class="about_icon">
                         <h3 class="about_sub">Temor</h3>
                         <p class="about_parrafo">3 minutos</p>
-                        <a href="#" class="cta">Ir.</a>
+                        <a href="/temor" class="cta">Ir.</a>
                     </article>
                     <article class="about_icons">
                         <img src="./images/enojo.png" class="about_icon">
