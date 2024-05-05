@@ -1,0 +1,598 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+
+body {
+  width: 100%;
+  background-image: linear-gradient(100deg, #0000008c 0%, #0000008c 100%), url('../images/fondo\ dos.png');
+  font-family: 'Nunito Sans', sans-serif;
+  color: #fff
+}
+
+* {
+  color: #ffffff;
+}
+
+footer , p {
+  background-color: transparent;
+}
+
+
+input, select, select option {
+  color: black
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.row {
+  margin-top: 20px;
+  display: block;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex: 1 0 auto;
+  padding: 10px;
+}
+
+.nav {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.nav > ul > li {
+  list-style: none;
+}
+
+.nav-logo {
+  height: 50px;
+}
+
+button {
+  width: 130px;
+  height: 50px;
+  background: transparent;
+  border: 3px solid #003459;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1em;
+  color: #fff;
+  font-weight: 500;
+  margin-left: 40px;
+  float:right;
+}
+
+button:hover {
+  background: #ffffff;
+  color: #003459;
+  transition: 0.5s;
+}
+
+
+
+.button-small {
+  width: 35px;
+  height: 35px;
+}
+
+.btn-red {
+  background-color: #ff0000;
+}
+
+.btn-azul-oscuro {
+  background-color: #003459;
+}
+
+.btn-amarillo {
+  background-color: #f8de52;
+  color: black;
+}
+
+
+.close-button {
+  float: right; 
+  margin-top: -5px; 
+  margin-right: 5px; 
+  padding: 5px 10px; /* Ajusta el relleno para el contenido del botón */
+  background-color: #f44336; 
+  color: white; 
+  border: none; 
+  border-radius: 3px; 
+  cursor: pointer; /* Indica que es un elemento clicable */
+}
+
+/*button Inicio y Perfil */
+
+.navigation { 
+  position: relative;
+  font-size: 1.1em;
+  color:#fff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 40px;
+}
+
+
+
+.container_Login {
+  display: none;
+  position: fixed; /* Lo fija en la pantalla */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(0, 0, 0); 
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+  z-index: 1000; /* Garantiza estar por encima del resto */
+}
+
+/* ENCUESTA */
+
+.encuesta {
+  text-align: center;
+
+}
+
+.encuesta h2 {
+  margin-bottom: 20px;
+}
+
+.encuesta p {
+  margin-bottom: 10px;
+}
+
+.encuesta-preguntas{
+  display: flex; /* Activar modo flexbox */
+  flex-direction: row; /* Disponer elementos en fila (horizontal) */
+  align-items: center; /* Alinear elementos verticalmente en el centro */
+  justify-content: space-between; /* Distribuir espacio entre elementos */
+  width: 100%; /* Ancho completo (o el deseado) */
+  padding: 25px; /* Añadir relleno al contenedor */
+  border: 1px solid #ccc; /* Borde gris claro (opcional) */
+}
+
+.preguntas {
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.preguntas h5 {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.preguntas input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.atrasBtn {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.atrasBtn button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.navegacion button:hover {
+  background-color: #fff;
+}
+
+footer {
+  background-color: none;
+  text-align: center;
+  padding: 10px;
+}
+
+.popup {
+  width: 400px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 25px;
+  border-color: #1768ac;
+  border-width: 8px;
+  background-color: rgba(0, 26, 73, 0.815);
+  backdrop-filter: blur(5px);
+  display: none;
+}
+
+.popup-input {
+  width: 100%;
+  display: block;
+}
+
+
+.popup label {  
+  width: 100%;
+  display: block;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 4em;
+  font-weight: 800;
+  border-color: rgb(0, 0, 0);
+
+}
+
+h2 {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 2.5em;
+  font-weight: 500;
+}
+
+h3 {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.btn-fluid {
+  width: 100%;
+}
+
+.btn-x {
+  display: unset;
+  float: right;
+  margin-top: -5px; 
+  margin-right: 5px;
+  z-index: 10;
+}
+
+hr {
+  text-align: center;
+  border: 3px solid #9b9efd;
+  margin: 20px 0; 
+}
+
+.flecha{
+  border-radius: 25px;
+  border-width: 5px;
+  background-color: rgba(255, 255, 255, 0.815);
+
+}
+
+.container-encuesta{
+  width: 100%;
+  margin: 0 auto;
+  list-style: none;
+}
+
+/* BOTON DE ENVIAR */
+
+.buttonEnviar {
+  position: fixed;
+  margin: 0 auto; 
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 5px; 
+  background-color: #007bff;
+  color: #fff; 
+  cursor: pointer; /
+}
+
+
+/* ESTILO DEL PERFIL */
+
+.containerP {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.headerP {
+  text-align: center;
+}
+
+.mainP {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-info {
+  width: 30%;
+  text-align: center;
+}
+
+.profile-info img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.user-details {
+  margin-bottom: 20px;
+}
+
+.user-details p {
+  margin-bottom: 5px;
+}
+
+.account-settings,
+.user-history {
+  width: 45%;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.account-settings h2,
+.user-history h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.account-settings ul,
+.user-history ul {
+  list-style: none;
+  padding: 0;
+}
+
+.account-settings li,
+.user-history li {
+  margin-bottom: 10px;
+}
+
+.account-settings a,
+.user-history a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.footerP {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footerP p {
+  font-size: 12px;
+  color: #999;
+}
+
+
+/* MENSAJERIA */
+
+.contenedor-mensajes {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+#mensajes-lista {
+  height: 120px; /* Ajusta la altura según tus necesidades */
+  overflow-y: auto; /* Permite el scroll si hay muchos mensajes */
+  padding: 10px;
+  border: 4px solid #00000098;
+  background-color: #9b9efd42;
+  backdrop-filter: blur(5px);
+}
+
+.mensaje {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+.nombre-usuario {
+  font-weight: bold;
+}
+
+.texto-mensaje {
+  color: #000000;
+  margin-top: 3px;
+}
+
+#formulario-mensaje {
+  margin-top: 20px;
+}
+
+#formulario-mensaje input,
+#formulario-mensaje textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #9b9efd;
+  border-radius: 5px;
+}
+
+
+/* CONTENEDOR DE LOS PROFESIONALES */
+
+.contenedor-horizontal {
+  width: 150%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  background-color: #0860a86e;
+  border: 2px solid #9b9efd;
+  border-radius: 9px;
+  margin: 0 auto;
+}
+
+.fotoCircular img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 7px solid #18dd32;
+}
+
+.fotoCircular1 img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: none;
+}
+
+.informacion {
+  margin-left: 20px;
+}
+
+.boton-agendar {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.boton-agendar:hover {
+  background-color: #0056b3;
+}
+
+
+/* CALENDARIO */
+
+#calendar {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+#month-year {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#weekdays {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+#days {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#days div {
+  width: calc(100% / 7);
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+}
+
+button {
+  display: block;
+  width: 100px;
+  height: 50px;
+  margin: 20px auto;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#notificationContainer {
+  position: fixed;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  flex-wrap: wrap-reverse;
+  align-content: flex-end;
+  align-items: flex-end;
+  bottom: 0;
+  right: 30px;
+  max-height: 100vh;
+  width: 200px; 
+  height: 200px; 
+  background-color: #1221eea9;
+  border: 1px solid #0008;
+  padding: 10px;
+  box-shadow: 0 0 1rem #0004;
+  overflow-y: auto; 
+ }
+ 
+ .notification {
+  transition: all 500ms ease-in-out;
+  margin: 0 0 10px 0;
+  background: #f9f99f;
+  color: #000;
+  border: 1px solid #0008;
+  padding: .2rem 1rem;
+  cursor: default;
+  user-select: none;
+ }
+
+ /* Mensajeria con profesional */
+
+#chat-container {
+  width: 75%;
+  height: 40%;
+  border: 4px solid #000;
+  padding: 10px;
+  overflow: auto;
+  background:  #007bff94;
+  position: fixed;
+}
+
+#chat-mensajes {
+  height: 80%;
+  overflow: auto;
+  
+  color: #f0f0f0;
+}
+
+#chat-input {
+  width: 70%;
+  margin-right: 10px;
+}
+
+#botonEnvio {
+  width: 20%;
+}
+
+.btn-profesional_si{
+  background-color: #f8de52;
+  color: black;
+  display: inline-block;
+  justify-self: center;
+  text-decoration: none;
+  padding: 13px 30px;
+  border-radius: 40px;
+  border-top: 10px;
+  
+
+}
